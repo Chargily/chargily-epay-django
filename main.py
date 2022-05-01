@@ -44,8 +44,8 @@ def create_body(
 
 
 request_body = create_body(
-    client="Tarek berkane",
-    client_email="tarekg320@gmail.com",
+    client="user 1",
+    client_email="example@gmail.com",
     invoice_number=1,
     amount=1000,
     discount=0,
