@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 
 CURRENT_PYTHON = sys.version_info[:2]
-REQUIRED_PYTHON = (3, 6)
+REQUIRED_PYTHON = (2, 7)
 version = '0.1'
 
 # This check and everything above must remain compatible with Python 2.7.

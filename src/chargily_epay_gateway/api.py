@@ -1,6 +1,4 @@
 
-from django.http import HttpRequest
-
 from .constants import BASE_CHARGILY_API, PAYMENT_ENDPOINT
 from . import exceptions as ex
 from .utils import get_api_key, get_secret_key
@@ -29,7 +27,7 @@ def make_payment(**kwargs):
     return requests.post(payment_url, headers=headers, data=payloads)
 
 
-def webhook_is_valid(request: HttpRequest):
+def webhook_is_valid(request):
     """ Validate the sinature sent by Chargily """
     # Get Signature
     try:

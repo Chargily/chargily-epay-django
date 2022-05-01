@@ -1,6 +1,5 @@
 import hmac
 import hashlib
-import base64
 
 
 def text2hash(message, secret_key):
@@ -10,5 +9,3 @@ def text2hash(message, secret_key):
         message = bytes(message, 'utf-8')
     dig = hmac.new(secret_key, msg=message, digestmod=hashlib.sha256)
     return dig.hexdigest()
-
-# TODO: implemenet hash for pyhon 2.7

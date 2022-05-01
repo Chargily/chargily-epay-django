@@ -11,6 +11,7 @@ This Plugin is to integrate ePayment gateway with Chargily easily.
 1. Python 2.7 or higher.
 2. Django 1.11 or higher.
 3. API Key/Secret from [ePay by Chargily](https://epay.chargily.com.dz) dashboard for free.
+4. Requests.
 
 # Installation
 Using pip (Recomended) ***Not in production yet.***
@@ -38,7 +39,7 @@ from chargily_epay_gateway.api import make_payment
 @csrf_exempt
 def invoice(request):
     if request.method != 'POST':
-        return HttpResponse(f'Method {request.method} not allowed')
+        return HttpResponse('Method {} not allowed'.format(request.method))
     response = make_payment(
         client='Client Name',
         client_email='Client Email',
