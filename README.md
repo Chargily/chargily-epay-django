@@ -14,17 +14,27 @@ This Plugin is to integrate ePayment gateway with Chargily easily.
 4. Requests.
 
 # Installation
-Using pip (Recomended) ***Not in production yet.***
+Using pip
 ```bash
-pip install chargily_epay_gateway_django
+pip install chargily-epay-gateway-django
+```
+
+or pipenv
+```bash
+pipenv install chargily-epay-gateway-django
 ```
 
 # Quick start
-Set `CHARGILY_APP_KEY` and `CHARGILY_APP_SECRET` in your settings.py file with the secret key and app key from [ePay Dashboard][api-keys]
+1- Set `CHARGILY_APP_KEY` and `CHARGILY_APP_SECRET` in your settings.py file with the secret key and app key from [ePay Dashboard][api-keys]
+
+2- Add `'chargily_epay_gateway.middlewares.ChargilyExceptionMiddleware'` in middlewares insides settings.py
 
 **(Make sure to save them inside `.env`, then load them in settings.py )**
 
 # Usage
+
+**PLEASE NOTE THAT installing the package name is `chargily-epay-gateway-django` but when we import it we use `chargily_epay_gateway`**
+
 1- Make Payment:
 
 - You can use class or function based view to make a payment
@@ -89,4 +99,4 @@ Tests are in progress...
 
 # Notice
 
-- If you faced Issues [Click here to open one](https://github.com/BeleganStartup/epay-gateway-django/issues/new)
+- If you faced Issues [Click here to open one](https://github.com/BeleganStartup/epay-gateway-django/pulls)

@@ -1,10 +1,15 @@
 import sys
 from setuptools import setup, find_packages
-
+from pathlib import Path
 
 CURRENT_PYTHON = sys.version_info[:2]
 REQUIRED_PYTHON = (2, 7)
-version = '0.1'
+version = '0.2'
+
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 
 # This check and everything above must remain compatible with Python 2.7.
 if CURRENT_PYTHON < REQUIRED_PYTHON:
@@ -28,13 +33,15 @@ your version of Python.
 setup(
     name='chargily_epay_gateway_django',
     version=version,
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     license='MIT',
     author="Okba Boularaoui",
     author_email='okba2fb@gmail.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     url='https://github.com/BeleganStartup/epay-gateway-django',
-    keywords='Chargily e-payment integration with Django',
+    keywords=['chargily', 'e-payment', 'integration', 'django', 'e-pay'],
     install_requires=[
           'requests',
     ],

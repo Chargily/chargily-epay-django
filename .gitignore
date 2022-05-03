@@ -5,6 +5,8 @@
 *.py.bak
 
 dev_requirements.txt
+*.egg-info
+
 
 /epay/
 /site/
