@@ -1,0 +1,18 @@
+theme: 
+    name: readthedocs
+
+site_name: Chargily-epay-django
+site_url: https://chargily.com/
+
+nav:
+    - Introduction:
+        - Overview: index.md
+        - Installation: installation.md
+        - Quickstart: quick_start.md
+    # - Examples:
+    #     - Sponsor site: sponsor_site.md
+    #     - fake payment:
+    - Core:
+        - Modles: models.md
+        - Views: views.md
+        - Settings: settings.md
