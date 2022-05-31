@@ -1,6 +1,10 @@
 # epay-gateway-django
 Chargily ePay Gateway (Django Package)
 
+## Documentation
+you can find more about [Here](https://dev.codingdz.com/chargily-epay-django/models/)
+
+
 ![Chargily ePay Gateway](https://raw.githubusercontent.com/Chargily/epay-gateway-php/main/assets/banner-1544x500.png "Chargily ePay Gateway")
 
 This Plugin is to integrate ePayment gateway with Chargily easily.
