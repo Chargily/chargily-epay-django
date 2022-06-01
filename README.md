@@ -170,7 +170,8 @@ class FakePayment(FakePaymentView):
     model = Payment
 ```
 
-
+## Example 
+check this example [sponsor site](https://github.com/tarek-berkane/Sponsor-site)
 
 
 
