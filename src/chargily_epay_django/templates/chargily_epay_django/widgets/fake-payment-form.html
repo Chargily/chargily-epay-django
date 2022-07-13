@@ -1,0 +1,40 @@
+
+<div class="payment-card">
+    <div class="card-header">
+        <p>Facture N°: <span id="facture-id">{{object.invoice_number}}</span></p>
+        <p>Le <span id="facture-date">{{object.create_date|date:'d M, Y'}}</span></p>
+    </div>
+    <hr>
+    <div class="card-body">
+        <div class="info-area">
+            <div class="acount-area">
+                <h4>Par</h4>
+                <div class="acount-description">
+                    Le compte de ce Marchand n'est pas encore vérifié !!
+                </div>
+            </div>
+            <div class="payment-info-area">
+                <ul style="list-style: none;">
+                    <li><strong>Doit</strong><span id="payment-client"> {{object.client|upper}}</span></li>
+                    <li><strong>Montant</strong><span id="payment-amount">{{object.amount}} DZD</span></li>
+                    <li><strong>Remise</strong><span id="payment-discount">{{object.discount}}%</span></li>
+                    <li><strong>Frais</strong><span id="payment-tax">35 DZD</span></li>
+                    <li style="border: 1px solid green;"><strong>Total</strong><span id="payment-total">{{object.amount|add:35}} DZD</span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="payment-comment" class="comment-area">
+            <h4>Détail de facture</h4>
+            <span id="payment-comment">d{{object.comment}}</span>
+        </div>
+    </div>
+    <hr>
+    <div class="card-footer">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form}}
+            <br>
+            <input type="submit" value="Submit" style="margin-left: auto;">
+        </form>
+    </div>
+</div>
