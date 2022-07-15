@@ -13,7 +13,7 @@ This Plugin is to integrate ePayment gateway with Chargily easily.
 
 # Installation
 ```py
-pip install chargily-epay-django
+pip install chargily-epay-Django
 ```
 
 ## Create Payment model 
