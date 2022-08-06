@@ -171,7 +171,9 @@ class FakePayment(FakePaymentView):
 ```
 
 ## Example 
-check this example [sponsor site](https://github.com/tarek-berkane/Sponsor-site)
+[Donation website](https://github.com/tarek-berkane/donation_website)
+
+[sponsor site](https://github.com/tarek-berkane/Sponsor-site)
 
 
 
